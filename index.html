@@ -54,42 +54,7 @@
      color: #1abc9c !important;
  }
   </style>
- 
-<!-- Diagrammeinstellungen -->
-<script>
-window.onload = function () {
-
-var chart = new CanvasJS.Chart("chartContainer", {
-	animationEnabled: true,
-	theme: "light2", // "light1", "light2", "dark1", "dark2"
-	title:{
-		text: "Speed of goals"
-	},
-	axisY: {
-		title: "Maximum speed measured"
-	},
-	data: [{        
-		type: "column",  
-		showInLegend: false, 
-		legendMarkerColor: "grey",
-		legendText: "speed measured",
-		dataPoints: [      
-			{ y: 76.6, label: "Name1" },
-			{ y: 67.3,  label: "Name2" },
-			{ y: 62.5,  label: "Name3" },
-			{ y: 59.7,  label: "Name4" },
-			{ y: 59.6,  label: "Name5" },
-			{ y: 51.9, label: "Name6" },
-			{ y: 44.2,  label: "Name7" },
-			{ y: 31.1,  label: "Name8" }
-		]
-	}]
-});
-chart.render();
-
-}
-</script>
- 
+  
 </head>
 <body>
  
@@ -137,12 +102,6 @@ chart.render();
     <div class="col-sm-4">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       <img src="Kicker - klein.jpg" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-	  <!-- Diagrammbereich -->
-    <div class="col-sm-4"> 
-     <p>Hier wird die maximal gemessene Geschwindigkeit angezeigt,</p>
-     <div id="chartContainer" style="height: 370px; width: 100%;"></div>
-     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     </div>
    </div>
 </div>
